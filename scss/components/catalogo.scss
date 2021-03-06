@@ -1,0 +1,125 @@
+body{
+    background-color: #eef3eb!important;
+}
+
+#catalogo   {
+
+    h2      {
+        text-align: center;
+        font-family: ("../../fonts/medio.otf");
+        padding: 30px 0 0 0;
+        letter-spacing: 2px;
+        font-weight: bold;
+        font-size: 2.5rem;
+    }
+   
+    .boxes-container    {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        align-content: center;
+        justify-content: center;
+
+        .parent {
+            width: 28%;
+            min-width: 300px;
+            margin: 10px;
+            height: 300px;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .child {
+            height: 100%;
+            width: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            -webkit-transition: all .5s;
+            -moz-transition: all .5s;
+            -o-transition: all .5s;
+            transition: all .5s;
+        }
+
+        a {
+            display: none;
+            font-size: 35px;
+            color: #ffffff !important;
+            font-family: sans-serif;
+            text-align: center;
+            margin: auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            height: 50px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .cactus a   {
+            bottom: 30px!important;
+        }
+
+        .aromaticas a   {
+            bottom: 30px!important;
+        }
+
+
+        .parent:hover .child, .parent:focus .child {
+            -ms-transform: scale(1.2);
+            -moz-transform: scale(1.2);
+            -webkit-transform: scale(1.2);
+            -o-transform: scale(1.2);
+            transform: scale(1.2);
+        }
+
+        .parent:hover .child:before, .parent:focus .child:before {
+            display: block;
+        }
+
+        .parent:hover a, .parent:focus a {
+            display: block;
+        }
+
+        .child:before {
+            content: "";
+            display: none;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba(52, 94, 61, 0.75);
+        }  
+                }
+
+        .aromaticas {
+            background-image: url("http://viverosjaenluismoreno.com/wp-content/uploads/2014/10/DSCF5410-001-1024x768.jpg");
+ 
+      }
+        
+        .interior   {
+            background-image: url("https://media3.s-nbcnews.com/i/newscms/2021_07/3432536/201202-indoor-plants-al-0853_6affaaf32c6838bc74505aeb5efc9908.jpg");
+
+        }
+        .exterior   {
+            background-image: url("https://res.cloudinary.com/patch-gardens/image/upload/c_crop,g_south,h_0.8,w_1.0/v1555060404/products/hydrangea-macrophylla-56b379.jpg") ;
+
+        }
+        .arboles    {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcmpdY8tpJCEQPpn6NSnBERXq_1hyZCQa4yA&usqp=CAU") ;
+
+        }
+        .cactus {
+
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWmAlDUiE7sf_SGMGPgo8IZplZhzljaqvhbw&usqp=CAU");
+        }
+        .suculentas {
+            background-image: url("https://cdn.shopify.com/s/files/1/1822/1197/articles/Bringing_Plants_Inside_Cover_581ce441-fa06-442e-9050-8b0305904dec_2048x.jpg?v=1570119394");
+            
+        }
+
+
+    }

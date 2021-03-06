@@ -1,0 +1,694 @@
+.portada .foto-portada {
+  background-image: url("../img/portada.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.portada .foto-portada img {
+  width: 170px;
+  position: absolute;
+  bottom: -30px;
+}
+.portada h1 {
+  font-size: 7.4rem;
+  color: white;
+  animation: fadein 4s;
+  font-family: "../../fonts/medio.otf";
+  letter-spacing: 10px;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.portada .botones {
+  display: flex;
+  margin-top: 20px;
+}
+.portada .botones a {
+  text-decoration: none;
+}
+.portada .botones .boton {
+  color: white;
+  border: 3px solid white;
+  padding: 20px 30px;
+  margin: 0 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+.portada .botones .boton-blanco {
+  background-color: white;
+  color: black;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+header nav {
+  background-color: #61705d;
+}
+header nav img {
+  width: 50px;
+}
+header .whatsapp:hover {
+  color: #eeeeee;
+}
+
+.whatsapp {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  z-index: 100;
+}
+
+.whatsapp-icon {
+  margin-top: 13px;
+}
+
+body {
+  background-color: #eef3eb !important;
+}
+
+#catalogo h2 {
+  text-align: center;
+  font-family: "../../fonts/medio.otf";
+  padding: 30px 0 0 0;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+#catalogo .boxes-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  align-content: center;
+  justify-content: center;
+}
+#catalogo .boxes-container .parent {
+  width: 28%;
+  min-width: 300px;
+  margin: 10px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+#catalogo .boxes-container .child {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+#catalogo .boxes-container a {
+  display: none;
+  font-size: 35px;
+  color: #ffffff !important;
+  font-family: sans-serif;
+  text-align: center;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 50px;
+  cursor: pointer;
+  text-decoration: none;
+}
+#catalogo .boxes-container .cactus a {
+  bottom: 30px !important;
+}
+#catalogo .boxes-container .aromaticas a {
+  bottom: 30px !important;
+}
+#catalogo .boxes-container .parent:hover .child, #catalogo .boxes-container .parent:focus .child {
+  -ms-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+#catalogo .boxes-container .parent:hover .child:before, #catalogo .boxes-container .parent:focus .child:before {
+  display: block;
+}
+#catalogo .boxes-container .parent:hover a, #catalogo .boxes-container .parent:focus a {
+  display: block;
+}
+#catalogo .boxes-container .child:before {
+  content: "";
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(52, 94, 61, 0.75);
+}
+#catalogo .aromaticas {
+  background-image: url("http://viverosjaenluismoreno.com/wp-content/uploads/2014/10/DSCF5410-001-1024x768.jpg");
+}
+#catalogo .interior {
+  background-image: url("https://media3.s-nbcnews.com/i/newscms/2021_07/3432536/201202-indoor-plants-al-0853_6affaaf32c6838bc74505aeb5efc9908.jpg");
+}
+#catalogo .exterior {
+  background-image: url("https://res.cloudinary.com/patch-gardens/image/upload/c_crop,g_south,h_0.8,w_1.0/v1555060404/products/hydrangea-macrophylla-56b379.jpg");
+}
+#catalogo .arboles {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcmpdY8tpJCEQPpn6NSnBERXq_1hyZCQa4yA&usqp=CAU");
+}
+#catalogo .cactus {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWmAlDUiE7sf_SGMGPgo8IZplZhzljaqvhbw&usqp=CAU");
+}
+#catalogo .suculentas {
+  background-image: url("https://cdn.shopify.com/s/files/1/1822/1197/articles/Bringing_Plants_Inside_Cover_581ce441-fa06-442e-9050-8b0305904dec_2048x.jpg?v=1570119394");
+}
+
+#aromaticas .container {
+  margin-top: 40px;
+}
+#aromaticas .container .titulo h2 {
+  font-family: "../../fonts/medio.otf";
+  text-align: center;
+  font-size: 2.3em;
+}
+#aromaticas .container .catalogo-aromaticas {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+#aromaticas .container .catalogo-aromaticas .card {
+  width: 250px;
+  height: 300px;
+  border-radius: 5px;
+  margin: 0 20px 20px 0;
+  /* aca se debe poner la foto de la planta*/
+}
+#aromaticas .container .catalogo-aromaticas .card .foto-planta {
+  width: 100%;
+  height: 60%;
+  background-color: black;
+  background-size: cover;
+}
+#aromaticas .container .catalogo-aromaticas .card .planta1 {
+  background-image: url("http://viverosjaenluismoreno.com/wp-content/uploads/2014/10/DSCF5410-001-1024x768.jpg");
+}
+#aromaticas .container .catalogo-aromaticas .card .planta2 {
+  background-image: url("http://viverosjaenluismoreno.com/wp-content/uploads/2014/10/DSCF5410-001-1024x768.jpg");
+}
+#aromaticas .container .catalogo-aromaticas .card .planta3 {
+  background-image: url("http://viverosjaenluismoreno.com/wp-content/uploads/2014/10/DSCF5410-001-1024x768.jpg");
+}
+#aromaticas .container .catalogo-aromaticas .card .planta4 {
+  background-image: url("http://viverosjaenluismoreno.com/wp-content/uploads/2014/10/DSCF5410-001-1024x768.jpg");
+}
+#aromaticas .container .catalogo-aromaticas .card .info {
+  padding: 10px;
+}
+#aromaticas .container .catalogo-aromaticas .card .info .titulo {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.contacto-form h3 {
+  font-family: "../fonts/medio.otf";
+  font-size: 2rem;
+  margin-top: 20px;
+}
+.contacto-form .container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.contacto-form .container .formulario {
+  width: 80%;
+}
+.contacto-form .container .formulario input {
+  border-radius: 0;
+  box-shadow: none;
+  border: white;
+}
+
+.metodo-contacto h2 {
+  font-family: "../fonts/medio.otf";
+  font-size: 2rem;
+  text-align: center;
+}
+.metodo-contacto .container {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+.metodo-contacto .container .modal-body {
+  display: flex;
+  justify-content: space-around;
+}
+.metodo-contacto .container .modal-body a {
+  color: gray;
+}
+.metodo-contacto .container .modal-body a:hover {
+  color: #525252;
+}
+
+footer {
+  height: 60px;
+  background-color: #556351;
+}
+footer .container-fluid {
+  height: 100%;
+  display: flex;
+  align-content: center;
+}
+footer .container-fluid p {
+  color: #fafafa !important;
+  padding: 20px 0;
+  font-size: 0.9rem;
+}
+
+.button {
+  --offset: 10px;
+  --border-size: 2px;
+  display: block;
+  position: relative;
+  padding: 1.5em 3em;
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: #689268;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 0;
+  box-shadow: inset 0 0 0 var(--border-size) currentcolor;
+  transition: background 0.8s ease;
+  margin: 0 30px;
+  width: 250px;
+}
+.button a {
+  text-decoration: none;
+  color: #689268;
+}
+.button a:active {
+  text-decoration: none;
+  color: #689268;
+}
+.button a:hover {
+  text-decoration: none;
+  color: #689268;
+}
+.button:hover {
+  background: rgba(100, 0, 0, 0.03);
+}
+.button__horizontal, .button__vertical {
+  position: absolute;
+  top: var(--horizontal-offset, 0);
+  right: var(--vertical-offset, 0);
+  bottom: var(--horizontal-offset, 0);
+  left: var(--vertical-offset, 0);
+  transition: transform 0.8s ease;
+  will-change: transform;
+}
+.button__horizontal::before, .button__vertical::before {
+  content: "";
+  position: absolute;
+  border: inherit;
+}
+.button__horizontal {
+  --vertical-offset: calc(var(--offset) * -1);
+  border-top: var(--border-size) solid currentcolor;
+  border-bottom: var(--border-size) solid currentcolor;
+}
+.button__horizontal::before {
+  top: calc(var(--vertical-offset) - var(--border-size));
+  bottom: calc(var(--vertical-offset) - var(--border-size));
+  left: calc(var(--vertical-offset) * -1);
+  right: calc(var(--vertical-offset) * -1);
+}
+.button:hover .button__horizontal {
+  transform: scaleX(0);
+}
+.button__vertical {
+  --horizontal-offset: calc(var(--offset) * -1);
+  border-left: var(--border-size) solid currentcolor;
+  border-right: var(--border-size) solid currentcolor;
+}
+.button__vertical::before {
+  top: calc(var(--horizontal-offset) * -1);
+  bottom: calc(var(--horizontal-offset) * -1);
+  left: calc(var(--horizontal-offset) - var(--border-size));
+  right: calc(var(--horizontal-offset) - var(--border-size));
+}
+.button:hover .button__vertical {
+  transform: scaleY(0);
+}
+
+#interior .container {
+  margin-top: 40px;
+}
+#interior .container .titulo h2 {
+  font-family: "../../fonts/medio.otf";
+  text-align: center;
+  font-size: 2.3em;
+}
+#interior .container .catalogo-interior {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+#interior .container .catalogo-interior .card {
+  width: 250px;
+  height: 300px;
+  border-radius: 5px;
+  margin: 0 20px 20px 0;
+  /* aca se debe poner la foto de la planta*/
+}
+#interior .container .catalogo-interior .card .foto-planta {
+  width: 100%;
+  height: 60%;
+  background-color: black;
+  background-size: cover;
+}
+#interior .container .catalogo-interior .card .planta1 {
+  background-image: url("http://viverosjaenluismoreno.com/wp-content/uploads/2014/10/DSCF5410-001-1024x768.jpg");
+}
+#interior .container .catalogo-interior .card .planta2 {
+  background-image: url("http://viverosjaenluismoreno.com/wp-content/uploads/2014/10/DSCF5410-001-1024x768.jpg");
+}
+#interior .container .catalogo-interior .card .planta3 {
+  background-image: url("http://viverosjaenluismoreno.com/wp-content/uploads/2014/10/DSCF5410-001-1024x768.jpg");
+}
+#interior .container .catalogo-interior .card .planta4 {
+  background-image: url("http://viverosjaenluismoreno.com/wp-content/uploads/2014/10/DSCF5410-001-1024x768.jpg");
+}
+#interior .container .catalogo-interior .card .info {
+  padding: 10px;
+}
+#interior .container .catalogo-interior .card .info .titulo {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+#exterior .container {
+  margin-top: 40px;
+}
+#exterior .container .titulo h2 {
+  font-family: "../../fonts/medio.otf";
+  text-align: center;
+  font-size: 2.3em;
+}
+#exterior .container .catalogo-exterior {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+#exterior .container .catalogo-exterior .card {
+  width: 250px;
+  height: 300px;
+  border-radius: 5px;
+  margin: 0 20px 20px 0;
+  /* aca se debe poner la foto de la planta*/
+}
+#exterior .container .catalogo-exterior .card .foto-planta {
+  width: 100%;
+  height: 60%;
+  background-color: black;
+  background-size: cover;
+}
+#exterior .container .catalogo-exterior .card .planta1 {
+  background-image: url("http://viverosjaenluismoreno.com/wp-content/uploads/2014/10/DSCF5410-001-1024x768.jpg");
+}
+#exterior .container .catalogo-exterior .card .planta2 {
+  background-image: url("http://viverosjaenluismoreno.com/wp-content/uploads/2014/10/DSCF5410-001-1024x768.jpg");
+}
+#exterior .container .catalogo-exterior .card .planta3 {
+  background-image: url("http://viverosjaenluismoreno.com/wp-content/uploads/2014/10/DSCF5410-001-1024x768.jpg");
+}
+#exterior .container .catalogo-exterior .card .planta4 {
+  background-image: url("http://viverosjaenluismoreno.com/wp-content/uploads/2014/10/DSCF5410-001-1024x768.jpg");
+}
+#exterior .container .catalogo-exterior .card .info {
+  padding: 10px;
+}
+#exterior .container .catalogo-exterior .card .info .titulo {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+#arboles .container {
+  margin-top: 40px;
+}
+#arboles .container .titulo h2 {
+  font-family: "../../fonts/medio.otf";
+  text-align: center;
+  font-size: 2.3em;
+}
+#arboles .container .catalogo-arboles {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+#arboles .container .catalogo-arboles .card {
+  width: 250px;
+  height: 300px;
+  border-radius: 5px;
+  margin: 0 20px 20px 0;
+  /* aca se debe poner la foto de la planta*/
+}
+#arboles .container .catalogo-arboles .card .foto-planta {
+  width: 100%;
+  height: 60%;
+  background-color: black;
+  background-size: cover;
+}
+#arboles .container .catalogo-arboles .card .planta1 {
+  background-image: url("http://viverosjaenluismoreno.com/wp-content/uploads/2014/10/DSCF5410-001-1024x768.jpg");
+}
+#arboles .container .catalogo-arboles .card .planta2 {
+  background-image: url("http://viverosjaenluismoreno.com/wp-content/uploads/2014/10/DSCF5410-001-1024x768.jpg");
+}
+#arboles .container .catalogo-arboles .card .planta3 {
+  background-image: url("http://viverosjaenluismoreno.com/wp-content/uploads/2014/10/DSCF5410-001-1024x768.jpg");
+}
+#arboles .container .catalogo-arboles .card .planta4 {
+  background-image: url("http://viverosjaenluismoreno.com/wp-content/uploads/2014/10/DSCF5410-001-1024x768.jpg");
+}
+#arboles .container .catalogo-arboles .card .info {
+  padding: 10px;
+}
+#arboles .container .catalogo-arboles .card .info .titulo {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+#cactus .container {
+  margin-top: 40px;
+}
+#cactus .container .titulo h2 {
+  font-family: "../../fonts/medio.otf";
+  text-align: center;
+  font-size: 2.3em;
+}
+#cactus .container .catalogo-cactus {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+#cactus .container .catalogo-cactus .card {
+  width: 250px;
+  height: 300px;
+  border-radius: 5px;
+  margin: 0 20px 20px 0;
+  /* aca se debe poner la foto de la planta*/
+}
+#cactus .container .catalogo-cactus .card .foto-planta {
+  width: 100%;
+  height: 60%;
+  background-color: black;
+  background-size: cover;
+}
+#cactus .container .catalogo-cactus .card .planta1 {
+  background-image: url("http://viverosjaenluismoreno.com/wp-content/uploads/2014/10/DSCF5410-001-1024x768.jpg");
+}
+#cactus .container .catalogo-cactus .card .planta2 {
+  background-image: url("http://viverosjaenluismoreno.com/wp-content/uploads/2014/10/DSCF5410-001-1024x768.jpg");
+}
+#cactus .container .catalogo-cactus .card .planta3 {
+  background-image: url("http://viverosjaenluismoreno.com/wp-content/uploads/2014/10/DSCF5410-001-1024x768.jpg");
+}
+#cactus .container .catalogo-cactus .card .planta4 {
+  background-image: url("http://viverosjaenluismoreno.com/wp-content/uploads/2014/10/DSCF5410-001-1024x768.jpg");
+}
+#cactus .container .catalogo-cactus .card .info {
+  padding: 10px;
+}
+#cactus .container .catalogo-cactus .card .info .titulo {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+#macetas .container {
+  margin-top: 40px;
+}
+#macetas .container .titulo h2 {
+  font-family: "../../fonts/medio.otf";
+  text-align: center;
+  font-size: 2.3em;
+}
+#macetas .container .catalogo-macetas {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+#macetas .container .catalogo-macetas .card {
+  width: 250px;
+  height: 300px;
+  border-radius: 5px;
+  margin: 0 20px 20px 0;
+  /* aca se debe poner la foto de la planta*/
+}
+#macetas .container .catalogo-macetas .card .foto-planta {
+  width: 100%;
+  height: 60%;
+  background-color: black;
+  background-size: cover;
+}
+#macetas .container .catalogo-macetas .card .planta1 {
+  background-image: url("http://viverosjaenluismoreno.com/wp-content/uploads/2014/10/DSCF5410-001-1024x768.jpg");
+}
+#macetas .container .catalogo-macetas .card .planta2 {
+  background-image: url("http://viverosjaenluismoreno.com/wp-content/uploads/2014/10/DSCF5410-001-1024x768.jpg");
+}
+#macetas .container .catalogo-macetas .card .planta3 {
+  background-image: url("http://viverosjaenluismoreno.com/wp-content/uploads/2014/10/DSCF5410-001-1024x768.jpg");
+}
+#macetas .container .catalogo-macetas .card .planta4 {
+  background-image: url("http://viverosjaenluismoreno.com/wp-content/uploads/2014/10/DSCF5410-001-1024x768.jpg");
+}
+#macetas .container .catalogo-macetas .card .info {
+  padding: 10px;
+}
+#macetas .container .catalogo-macetas .card .info .titulo {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 700px) {
+  .portada h1 {
+    font-size: 10vw;
+    text-align: center;
+  }
+  .portada .botones {
+    flex-direction: column;
+  }
+  .portada .botones .boton {
+    margin-top: 10px;
+  }
+
+  #contacto .container {
+    flex-direction: column;
+    padding-top: 0;
+    align-items: center;
+  }
+  #contacto .container .button {
+    margin-top: 40px;
+  }
+
+  #aromaticas .container .catalogo-aromaticas .card {
+    margin-right: 0;
+  }
+
+  #cactus .container .catalogo-cactus .card {
+    margin-right: 0;
+  }
+
+  #interior .container .catalogo-interior .card {
+    margin-right: 0;
+  }
+
+  #exterior .container .catalogo-exterior .card {
+    margin-right: 0;
+  }
+
+  #macetas .container .catalogo-macetas .card {
+    margin-right: 0;
+  }
+
+  #arboles .container .catalogo-arboles .card {
+    margin-right: 0;
+  }
+}
+@media only screen and (max-width: 345px) {
+  .portada h1 {
+    font-size: 40px;
+    padding-bottom: 40px;
+  }
+  .portada .botones {
+    flex-direction: column;
+  }
+  .portada .botones .boton {
+    margin-top: 10px;
+  }
+
+  #catalogo .boxes-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    align-content: center;
+    justify-content: center;
+  }
+  #catalogo .boxes-container .parent {
+    width: 28%;
+    margin: 10px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+  }
+
+  #contacto .container {
+    padding: 0;
+    padding-bottom: 50px;
+  }
+
+  footer {
+    height: 80px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

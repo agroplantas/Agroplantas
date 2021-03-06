@@ -1,0 +1,102 @@
+@media only screen and (max-width: 700px) {
+  
+    .portada    {
+        h1  {
+            font-size: 10vw;
+            text-align: center;
+        }
+        .botones    {
+            flex-direction: column;
+            .boton  {
+               margin-top: 10px;
+            }
+        }
+    }
+
+
+    #contacto   {
+        .container  {
+            flex-direction: column;
+            padding-top: 0;
+            align-items: center;
+            .button     {
+                margin-top: 40px;
+            }
+        }
+    }
+
+    #aromaticas .container .catalogo-aromaticas .card   {
+        margin-right: 0;
+    }
+
+    #cactus .container .catalogo-cactus .card   {
+        margin-right: 0;
+    }
+      
+    #interior .container .catalogo-interior .card   {
+        margin-right: 0;
+    }
+
+    #exterior .container .catalogo-exterior .card   {
+        margin-right: 0;
+    }
+
+    #macetas .container .catalogo-macetas .card   {
+        margin-right: 0;
+    }
+
+    #arboles .container .catalogo-arboles .card   {
+        margin-right: 0;
+    }
+
+}
+
+@media only screen and (max-width: 345px) {
+
+    .portada    {
+        h1  {
+            font-size: 40px;
+            padding-bottom: 40px;
+        }
+        .botones    {
+            flex-direction: column;
+            .boton  {
+               margin-top: 10px;
+            }
+        }
+    }
+
+    #catalogo   {
+
+        .boxes-container    {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            align-content: center;
+            justify-content: center;
+    
+            .parent {
+                width: 28%;
+                margin: 10px;
+                height: 300px;
+                overflow: hidden;
+                position: relative;
+                cursor: pointer;
+            }
+
+    }
+
+}
+
+#contacto   {
+    .container  {
+        padding: 0;
+        padding-bottom: 50px;
+    }
+}
+
+footer  {
+    height: 80px;
+}
+
+}

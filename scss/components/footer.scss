@@ -1,0 +1,14 @@
+footer  {
+    height: 60px;
+    background-color:  rgb(85, 99, 81);
+    .container-fluid    {
+        height: 100%;
+        display: flex;
+        align-content: center;
+       p    {
+        color: #fafafa!important;
+        padding: 20px 0;
+        font-size: 0.9rem;
+       }
+    }
+}

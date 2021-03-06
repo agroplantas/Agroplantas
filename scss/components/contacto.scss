@@ -1,0 +1,49 @@
+.contacto-form   {
+    h3  {
+        font-family: ("../fonts/medio.otf");
+        font-size: 2rem;
+        margin-top: 20px;
+    }
+    .container  {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+       
+        .formulario     {
+            width: 80%;
+            input   {
+                border-radius: 0;
+                box-shadow: none;
+                border: white;
+            }
+        }
+    }
+    }
+    
+.metodo-contacto    {
+
+    h2  {
+        font-family: ("../fonts/medio.otf");
+        font-size: 2rem;
+        text-align: center;
+    }
+    .container  {
+
+        display: flex;
+        justify-content: center;
+        padding: 50px;
+  
+        .modal-body     {
+            display: flex;
+            justify-content: space-around;
+
+
+            a   {
+                color: gray;
+                &:hover     {
+                    color: rgb(82, 82, 82);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,60 @@
+#macetas {
+
+    .container  {
+        margin-top: 40px;
+      .titulo   {
+     
+        h2  {
+            font-family: ("../../fonts/medio.otf");
+            text-align: center;
+            font-size: 2.3em;
+
+        }   
+      }
+      .catalogo-macetas  {
+        display:flex;
+        justify-content:center;
+        flex-wrap: wrap;
+        margin-top:30px;
+        .card   {
+          width: 250px;
+          height: 300px;
+          border-radius: 5px;
+          margin: 0 20px 20px 0;
+          .foto-planta  {
+            width: 100%;
+            height: 60%;
+            background-color: black;
+            background-size: cover;
+          }
+
+          /* aca se debe poner la foto de la planta*/
+
+          .planta1  {
+            background-image: url("http://viverosjaenluismoreno.com/wp-content/uploads/2014/10/DSCF5410-001-1024x768.jpg");
+          }
+
+          .planta2  {
+            background-image: url("http://viverosjaenluismoreno.com/wp-content/uploads/2014/10/DSCF5410-001-1024x768.jpg");
+          }
+
+          .planta3  {
+            background-image: url("http://viverosjaenluismoreno.com/wp-content/uploads/2014/10/DSCF5410-001-1024x768.jpg");
+          }
+
+          .planta4  {
+            background-image: url("http://viverosjaenluismoreno.com/wp-content/uploads/2014/10/DSCF5410-001-1024x768.jpg");
+          }
+
+          .info {
+            padding: 10px;
+            .titulo {
+              margin-bottom: 10px;
+              font-weight: bold;
+              font-size: 1.5rem;
+            }
+          }
+        }
+      }
+    }
+}
